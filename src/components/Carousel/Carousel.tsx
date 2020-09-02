@@ -5,7 +5,7 @@ import baptism3 from "../../img/IMG_1959.jpeg";
 
 import Video from "../../mp4/trm.mp4";
 
-export function Carousel() {
+export const Carousel = () => {
   return (
     <>
       <div
@@ -99,4 +99,4 @@ export function Carousel() {
       </div>
     </>
   );
-}
+};
