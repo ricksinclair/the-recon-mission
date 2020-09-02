@@ -36,7 +36,7 @@ export function Carousel() {
               Your browser does not support the video tag.
             </video>{" "}
             <div className="carousel-caption d-none d-md-block">
-              <h5>View Photos & Video From Our Day at Orchage Beach</h5>
+              <h5>Learn what the Bible says about Baptism</h5>
               <p>See what the process looks like.</p>
             </div>
           </div>
