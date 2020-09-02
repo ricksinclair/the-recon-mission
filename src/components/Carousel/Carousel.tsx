@@ -37,7 +37,9 @@ export function Carousel() {
             </video>{" "}
             <div className="carousel-caption d-none d-md-block">
               <h5>Learn what the Bible says about Baptism</h5>
-              <p>See what the process looks like.</p>
+              <p>
+                Learn how <strong>Jesus</strong> did it
+              </p>
             </div>
           </div>
           <div className="carousel-item ">
