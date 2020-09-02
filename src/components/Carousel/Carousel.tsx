@@ -3,7 +3,7 @@ import baptism1 from "../../img/IMG_1984.jpeg";
 // import baptism2 from "../../img/IMG_2021.jpeg";
 import baptism3 from "../../img/IMG_1959.jpeg";
 
-import Video from "../../mp4/Video.mp4";
+import Video from "../../mp4/trm.mp4";
 
 export function Carousel() {
   return (
@@ -13,7 +13,7 @@ export function Carousel() {
         className="carousel slide carousel-fade"
         data-ride="carousel"
       >
-        <ol className="carousel-indicators">
+        {/* <ol className="carousel-indicators">
           <li
             data-target="#carouselExampleCaptions"
             data-slide-to="0"
@@ -21,7 +21,7 @@ export function Carousel() {
           ></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
+        </ol> */}
         <div className="carousel-inner">
           <div className="carousel-item active">
             <video
@@ -30,24 +30,26 @@ export function Carousel() {
               autoPlay
               muted
               width="1110"
-              height="640"
+              height="624"
             >
               <source src={Video} type="video/mp4" />
               Your browser does not support the video tag.
             </video>{" "}
             <div className="carousel-caption d-none d-md-block">
               <h5>Learn what the Bible says about Baptism</h5>
-              <p>
+              <p className="mb-4">
                 Learn how <strong>Jesus</strong> did it
               </p>
             </div>
           </div>
-          <div className="carousel-item ">
+          <div className="carousel-item mb-4">
             <img
               src={baptism1}
               className="d-block w-100"
               alt="Baptism August 2020"
               loading="lazy"
+              width="1110"
+              height="624"
             />
             <div className="carousel-caption d-none d-md-block">
               <h5>Take The First Step Toward A New Life!</h5>
@@ -61,6 +63,8 @@ export function Carousel() {
               className="d-block w-100"
               alt="Baptism August 2020"
               loading="lazy"
+              width="1110"
+              height="624"
             />
             <div className="carousel-caption d-none d-md-block">
               <h5>View Photos & Video From Our Day at Orchage Beach</h5>
