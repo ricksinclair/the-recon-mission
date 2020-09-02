@@ -1,13 +1,16 @@
 import React from "react";
 import baptism1 from "../../img/IMG_1984.jpeg";
-import baptism2 from "../../img/IMG_2021.jpeg";
-import baptism3 from "../../img/IMG_1936.jpeg";
-export const Carousel = () => {
+// import baptism2 from "../../img/IMG_2021.jpeg";
+import baptism3 from "../../img/IMG_1959.jpeg";
+
+import Video from "../../mp4/Video.mp4";
+
+export function Carousel() {
   return (
     <>
       <div
         id="carouselExampleCaptions"
-        className="carousel slide"
+        className="carousel slide carousel-fade"
         data-ride="carousel"
       >
         <ol className="carousel-indicators">
@@ -21,38 +24,45 @@ export const Carousel = () => {
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active">
+            <video
+              id="background-video"
+              loop
+              autoPlay
+              muted
+              width="1110"
+              height="640"
+            >
+              <source src={Video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>{" "}
+            <div className="carousel-caption d-none d-md-block">
+              <h5>View Photos & Video From Our Day at Orchage Beach</h5>
+              <p>See what the process looks like.</p>
+            </div>
+          </div>
+          <div className="carousel-item ">
             <img
               src={baptism1}
               className="d-block w-100"
               alt="Baptism August 2020"
+              loading="lazy"
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h5>Take The First Step Toward A New Life!</h5>
+              <p>Sign up for our Baptismal Classes Today!</p>
             </div>
           </div>
-          <div className="carousel-item">
-            <img
-              src={baptism2}
-              className="d-block w-100"
-              alt="Baptism August 2020"
-            />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-          </div>
+
           <div className="carousel-item">
             <img
               src={baptism3}
               className="d-block w-100"
               alt="Baptism August 2020"
+              loading="lazy"
             />
             <div className="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
+              <h5>View Photos & Video From Our Day at Orchage Beach</h5>
+              <p>See what the process looks like.</p>
             </div>
           </div>
         </div>
@@ -83,4 +93,4 @@ export const Carousel = () => {
       </div>
     </>
   );
-};
+}

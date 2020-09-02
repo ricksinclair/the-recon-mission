@@ -4,9 +4,20 @@ import { ReactComponent as HouseIcon } from "../../../node_modules/bootstrap-ico
 export const Navbar = () => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg  bg-dark text-light">
-        <HouseIcon className="navbar-brand" height="30" width="30" />
-
+      <nav className="navbar navbar-expand-lg  bg-info text-light">
+        <Link
+          className=""
+          to="/"
+          role="button"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <HouseIcon
+            className="navbar-brand text-light"
+            height="30"
+            width="30"
+          />
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -21,16 +32,7 @@ export const Navbar = () => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
-            <li className="nav-item active">
-              <Link className="nav-link" to="/">
-                Home <span className="sr-only">(current)</span>
-              </Link>
-            </li>
-            {/* <li className="nav-item">
-              <Link className="nav-link" to="/">
-                Link
-              </Link>
-            </li> */}
+            <li className="nav-item active"></li>
             <li className="nav-item dropdown">
               <Link
                 className="nav-link dropdown-toggle"
@@ -41,26 +43,40 @@ export const Navbar = () => {
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Dropdown
+                Menu <span className="sr-only">(current)</span>
               </Link>
               <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <Link className="dropdown-item" to="/">
-                  Action
+                <Link
+                  className="btn btn-outline-secondary dropdown-item btn btn-outline-secondary"
+                  to="/"
+                >
+                  Home
+                </Link>
+                <Link
+                  className="btn btn-outline-secondary dropdown-item btn btn-outline-secondary"
+                  to="/"
+                >
+                  About
                 </Link>
                 <Link className="dropdown-item" to="/">
-                  Another action
+                  Contact
                 </Link>
-                <div className="dropdown-divider"></div>
+                {/* <div className="dropdown-divider"></div>
                 <Link className="dropdown-item" to="/">
                   Something else here
-                </Link>
+                </Link>*/}
               </div>
             </li>
             <li className="nav-item">
+              <Link className="nav-link" to="/">
+                Blog
+              </Link>
+            </li>
+            {/* <li className="nav-item">
               <Link className="nav-link disabled" to="/" aria-disabled="true">
                 Disabled
               </Link>
-            </li>
+            </li> */}
           </ul>
           <form className="form-inline my-2 my-lg-0">
             <input
@@ -70,7 +86,7 @@ export const Navbar = () => {
               aria-label="Search"
             />
             <button
-              className="btn btn-outline-secondary my-2 my-sm-0"
+              className="btn btn-outline-light my-2 my-sm-0"
               type="submit"
             >
               Search

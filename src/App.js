@@ -16,6 +16,10 @@ export const App = () => {
           </Switch>
         </div>
       </div>
+
+      <footer className="text-center">
+        <small>&copy; The Recon Mission</small>
+      </footer>
     </Router>
   );
 };
